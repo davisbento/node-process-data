@@ -5,12 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch server/index.js"
+    "start": "node --watch index.js"
   },
   "engines": {
     "node": "20"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "byte-size": "8.1"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
 }
