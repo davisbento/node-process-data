@@ -3,9 +3,102 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>WebStreams Data Consuming</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: black;
+				color: #fff;
+			}
+			.buttons {
+				margin-top: 10%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 8px;
+				margin-bottom: 32px;
+			}
+			#start {
+				background-color: green;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 5px;
+				border-color: #ccc;
+				margin-right: 10px;
+			}
+			#stop {
+				background-color: red;
+				color: white;
+				padding: 10px 20px;
+				border-color: #ccc;
+				border-radius: 5px;
+			}
+			.grid {
+				margin: 32px;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				grid-gap: 20px;
+				align-items: stretch;
+			}
+			.grid > article {
+				border: 1px solid #ccc;
+				padding: 10px;
+			}
+			.text {
+				padding: 20px;
+			}
+		</style>
 	</head>
 	<body>
-		Hello
+		<div class="buttons">
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+		</div>
+
+		<div id="data">
+			<main id="cards" class="grid">
+				<article>
+					<div class="text">
+						<h3>Test 01</h3>
+						<p>test</p>
+						<a href="#">Something here</a>
+					</div>
+				</article>
+				<article>
+					<div class="text">
+						<h3>Test 01</h3>
+						<p>test</p>
+						<a href="#">Something here</a>
+					</div>
+				</article>
+				<article>
+					<div class="text">
+						<h3>Test 01</h3>
+						<p>test</p>
+						<a href="#">Something here</a>
+					</div>
+				</article>
+				<article>
+					<div class="text">
+						<h3>Test 01</h3>
+						<p>test</p>
+						<a href="#">Something here</a>
+					</div>
+				</article>
+				<article>
+					<div class="text">
+						<h3>Test 01</h3>
+						<p>test</p>
+						<a href="#">Something here</a>
+					</div>
+				</article>
+			</main>
+		</div>
+
+		<script src="./index.js" type="module"></script>
 	</body>
 </html>
