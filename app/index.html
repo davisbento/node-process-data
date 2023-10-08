@@ -13,6 +13,7 @@
 			body {
 				background-color: black;
 				color: #fff;
+				height: 100vh;
 			}
 			.buttons {
 				margin-top: 10%;
@@ -28,10 +29,16 @@
 				padding: 10px 20px;
 				border-radius: 5px;
 				border-color: #ccc;
-				margin-right: 10px;
 			}
 			#stop {
 				background-color: red;
+				color: white;
+				padding: 10px 20px;
+				border-color: #ccc;
+				border-radius: 5px;
+			}
+			#clear {
+				background-color: orange;
 				color: white;
 				padding: 10px 20px;
 				border-color: #ccc;
@@ -57,46 +64,11 @@
 		<div class="buttons">
 			<button id="start">Start</button>
 			<button id="stop">Stop</button>
+			<button id="clear">Clear</button>
 		</div>
 
 		<div id="data">
-			<main id="cards" class="grid">
-				<article>
-					<div class="text">
-						<h3>Test 01</h3>
-						<p>test</p>
-						<a href="#">Something here</a>
-					</div>
-				</article>
-				<article>
-					<div class="text">
-						<h3>Test 01</h3>
-						<p>test</p>
-						<a href="#">Something here</a>
-					</div>
-				</article>
-				<article>
-					<div class="text">
-						<h3>Test 01</h3>
-						<p>test</p>
-						<a href="#">Something here</a>
-					</div>
-				</article>
-				<article>
-					<div class="text">
-						<h3>Test 01</h3>
-						<p>test</p>
-						<a href="#">Something here</a>
-					</div>
-				</article>
-				<article>
-					<div class="text">
-						<h3>Test 01</h3>
-						<p>test</p>
-						<a href="#">Something here</a>
-					</div>
-				</article>
-			</main>
+			<main id="cards" class="grid"></main>
 		</div>
 
 		<script src="./index.js" type="module"></script>
